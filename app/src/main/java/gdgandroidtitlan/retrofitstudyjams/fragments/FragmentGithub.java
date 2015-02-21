@@ -98,6 +98,7 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
     }
 
 
+
     private void showToast(String message) {
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }

@@ -12,9 +12,5 @@
     <color name="transparent_black">#90000000</color>
     <color name="gray_two">#9E9E9E</color>
     <color name="grey_hint">#bdbdbd</color>
-    <array name="progress_colors">
-        <item>#009688</item>
-        <item>#00BFA5</item>
 
-    </array>
 </resources>

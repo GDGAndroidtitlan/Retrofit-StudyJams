@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/txtView_users_github"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/github_user"
+                        android:textColor="@color/accent"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:src="@drawable/gitwalter" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <EditText
+                        android:id="@+id/editTxt_user_github"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="2dp"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/user_name"
+                        android:padding="10dp"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/grey_hint"
+                        android:textSize="16sp" />
+
+
+                    <com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ripple:rv_color="@color/transparent_black"
+                        ripple:rv_type="rectangle">
+
+
+                        <Button
+                            android:id="@+id/btn_search_github_user"
+                            style="@style/Widget.Button.Style.Github.Search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="@string/search"
+                            android:textColor="@color/white" />
+
+                    </com.andexert.library.RippleView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_github_profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="user name"
+                    android:textColor="@color/nav_list_item"
+                    android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_study_jams"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/studyjams"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutTitleTab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_card_view"
+               >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/studyjams"
+                    android:orientation="vertical">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

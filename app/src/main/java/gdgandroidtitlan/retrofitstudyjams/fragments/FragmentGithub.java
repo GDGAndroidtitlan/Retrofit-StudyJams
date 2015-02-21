@@ -101,6 +101,7 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }
 
+
     private void retrofitCallback() {
 
         final GitHubService gitHubService = ClientService.buildGithubRestAdapter(getActivity()).create(GitHubService.class);

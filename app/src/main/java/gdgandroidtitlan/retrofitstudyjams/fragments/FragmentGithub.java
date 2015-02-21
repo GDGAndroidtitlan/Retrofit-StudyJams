@@ -79,7 +79,6 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
     }
 
-
     @Override
     public void onClick(View v) {
 

@@ -25,7 +25,7 @@ public class ClientService {
                 .registerTypeAdapter(Date.class, new DateTypeAdapter()).create();
     }
 
-    public static RestAdapter buildGithubRestAdapter(Context context) {
+    public static RestAdapter buildGithubRestAdapter() {
 
         return new RestAdapter.Builder().setEndpoint(endPointGitHub).setErrorHandler(new RetrofitErrorHandler())
                 .setConverter(new GsonConverter(getGsonBuilder())).build();

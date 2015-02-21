@@ -104,7 +104,7 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
 
     private void retrofitCallback() {
 
-        final GitHubService gitHubService = ClientService.buildGithubRestAdapter(getActivity()).create(GitHubService.class);
+        final GitHubService gitHubService = ClientService.buildGithubRestAdapter().create(GitHubService.class);
 
         gitHubService.getUser("erikcaffrey", new Callback<GitHubUserProfile>() {
             @Override
@@ -124,7 +124,7 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
     private void requestRetrofit(final String avatarName) {
 
 
-        final GitHubService gitHubService = ClientService.buildGithubRestAdapter(getActivity()).create(GitHubService.class);
+        final GitHubService gitHubService = ClientService.buildGithubRestAdapter().create(GitHubService.class);
 
 
         try {

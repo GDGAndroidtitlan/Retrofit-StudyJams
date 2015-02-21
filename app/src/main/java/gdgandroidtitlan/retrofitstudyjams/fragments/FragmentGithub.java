@@ -64,8 +64,8 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
         cardViewProfile = (CardView) rootView.findViewById(R.id.card_view_github_profile);
         cardViewStudyJams = (CardView) rootView.findViewById(R.id.card_view_study_jams);
         editTxtUserGitHub = (EditText) rootView.findViewById(R.id.editTxt_user_github);
-        txtName = (TextView)rootView.findViewById(R.id.txt_profile_name);
-        imageViewAvatar = (ImageView)rootView.findViewById(R.id.imageView_profile);
+        txtName = (TextView) rootView.findViewById(R.id.txt_profile_name);
+        imageViewAvatar = (ImageView) rootView.findViewById(R.id.imageView_profile);
         (rootView.findViewById(R.id.btn_search_github_user)).setOnClickListener(this);
 
         cardViewProfile.setVisibility(View.INVISIBLE);
@@ -96,7 +96,6 @@ public class FragmentGithub extends Fragment implements View.OnClickListener {
         }
 
     }
-
 
 
     private void showToast(String message) {
